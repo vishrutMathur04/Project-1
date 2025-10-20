@@ -167,5 +167,13 @@ All core features work correctly. Driver communicates with both modules, logs al
 Final cleanup and comments.
 Test complete workflow from password -> encrypt -> decrypt -> quit.
 
+# Oct 19 11:45 pm
+
+Took a break
+I tested log files mylog1.txt
+as I set the password and then tried to encrypt hello and was able to encrypt and then tried to decrypt it as well and its working.
+
+
+
 
 
