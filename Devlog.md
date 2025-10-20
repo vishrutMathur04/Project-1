@@ -53,9 +53,19 @@ I did some more testing with logger file and now have created the encrypt.py fil
 
 Start working on 'encrypt.py`. This program will manage encryption/decryption using a Vigenère-style cipher and communicate via stdin/stdout.
 
-# Oct 19 8:56 pm
+# Oct 19 8:59 pm
 I am thinking to find a way to validate input so only alphabetic text is processed.
 Non-letter characters should be rejected early to avoid errors.
 
 Write a helper function for only the letters
 It should return True if text has only letters.
+
+# Oct 19 9:20 pm
+With validation ready, the next big part is actual encryption logic.
+
+As the Vigenère cipher shifts each letter by key position so need both encrypt and decrypt versions.
+
+So next steps will be implement vigenere_encrypt() and vigenere_decrypt() functions
+
+I will also see if its able to iterate through characters and apply shifts using key indices.
+
