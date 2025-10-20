@@ -144,4 +144,13 @@ Add options for password setup, encryption, and decryption.
 
 Maintain a history list.
 
+# Oct 19 10:50 pm
+
+Password setup is functional.
+
+Now I’ll handle encryption and decryption commands, and make sure all results are stored in history.
+Will Add handlers for encrypt and decrypt.
+Append results to history and log all actions except passwords.
+
+
 

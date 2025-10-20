@@ -66,4 +66,23 @@ try:
             else:
                 print(resp)
                 write_log("ERROR", resp)
+        elif command in ("encrypt", "decrypt"):
+            data = input("Enter text (letters only): ").strip()
+            if not data.isalpha():
+                print("Input must contain only letters.")
+                continue
+
+            cmd_type = "ENCRYPT" if command == "encrypt" else "DECRYPT"
+            write_log(cmd_type, data)
+            resp = send_encrypt_command(f"{cmd_type} {data.upper()}")
+
+            if resp.startswith("RESULT"):
+                result_text = resp.split(None, 1)[1]
+                print("Result:", result_text)
+                history.append((cmd_type, data, result_text))
+                write_log("RESULT", result_text)
+            else:
+                print(resp)
+                write_log("ERROR", resp)
+
 
