@@ -47,3 +47,11 @@ def main():
         command = parts[0].upper()
         payload = parts[1] if len(parts) > 1 else ""
 
+        if command in ("PASS", "PASSKEY"):
+            if not payload or not letters_only(payload):
+                print("ERROR Password must contain only letters")
+                sys.stdout.flush()
+                continue
+            key_value = payload.upper()
+            print("RESULT Key accepted")
+            sys.stdout.flush()

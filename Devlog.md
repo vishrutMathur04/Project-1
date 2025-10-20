@@ -78,5 +78,12 @@ It should read commands through standard input and respond immediately.
 Start an infinite loop to process stdin lines.
 Handle blank lines and QUIT properly.
 
+# Oct 19 9:33 pm 
+So we are ready to implement the password setup command.
+
+Need to validate input and store the uppercase version as key for later use so for that adding handler for PASS and PASSKEY commands.
+Validate input via letters_only().
+Print result or error to stdout.
+
 
 
