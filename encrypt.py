@@ -55,3 +55,30 @@ def main():
             key_value = payload.upper()
             print("RESULT Key accepted")
             sys.stdout.flush()
+            
+        elif command == "ENCRYPT":
+            if not key_value:
+                print("ERROR No key set")
+                sys.stdout.flush()
+                continue
+            if not payload or not letters_only(payload):
+                print("ERROR Input must be letters only")
+                sys.stdout.flush()
+                continue
+            result = vigenere_encrypt(payload.upper(), key_value)
+            print("RESULT", result)
+            sys.stdout.flush()
+
+        elif command == "DECRYPT":
+            if not key_value:
+                print("ERROR No key set")
+                sys.stdout.flush()
+                continue
+            if not payload or not letters_only(payload):
+                print("ERROR Input must be letters only")
+                sys.stdout.flush()
+                continue
+            result = vigenere_decrypt(payload.upper(), key_value)
+            print("RESULT", result)
+            sys.stdout.flush()
+

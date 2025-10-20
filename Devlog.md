@@ -85,5 +85,13 @@ Need to validate input and store the uppercase version as key for later use so f
 Validate input via letters_only().
 Print result or error to stdout.
 
+# Oct 19 9:40 pm
+Key storage works. N
+Need to validate both key and payload before calling cipher functions.
+
+Next we will perform encryption and decryption using it.
+Add blocks for ENCRYPT and DECRYPT commands.
+Handle missing key and invalid input errors gracefully.
+
 
 
