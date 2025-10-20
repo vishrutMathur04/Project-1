@@ -93,5 +93,11 @@ Next we will perform encryption and decryption using it.
 Add blocks for ENCRYPT and DECRYPT commands.
 Handle missing key and invalid input errors gracefully.
 
+# Oct 19 9:45 pm
+Added blocks for encrypt and decrypt commands
+
+Now next I am thinking to add final else clause for unknown commands.
+Ensure every output is flushed immediately.
+
 
 

@@ -81,4 +81,8 @@ def main():
             result = vigenere_decrypt(payload.upper(), key_value)
             print("RESULT", result)
             sys.stdout.flush()
+            
+        else:
+            print("ERROR Unknown command")
+            sys.stdout.flush()
 
