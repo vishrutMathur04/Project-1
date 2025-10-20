@@ -37,4 +37,13 @@ and then flush output after every write.
 
 Next I would need to Wrap logic in a main() for clarity, validate argument count, test edge cases.
 
+# Oct 19 8:25 pm
+I was able to implement all the requirements in Logger and a main method and now it meets all these requirements  
+ 
+ Reads stdin until QUIT.  
+ Writes timestamps and actions.  
+ Flushes after each entry.  
+ Handles argument errors cleanly.  
 
+**Plan for next session:**  
+Start `encrypt.py` following the same development pattern.
