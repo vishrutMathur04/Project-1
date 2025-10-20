@@ -69,3 +69,14 @@ So next steps will be implement vigenere_encrypt() and vigenere_decrypt() functi
 
 I will also see if its able to iterate through characters and apply shifts using key indices.
 
+# Oct 19 9:27 pm
+
+Core functions work standalone, but now the program needs to interact dynamically.
+It should read commands through standard input and respond immediately.
+
+
+Start an infinite loop to process stdin lines.
+Handle blank lines and QUIT properly.
+
+
+

@@ -29,3 +29,21 @@ def vigenere_decrypt(data, key):
         else:
             out.append(c)
     return "".join(out)
+
+def main():
+    key_value = None
+
+    while True:
+        line = sys.stdin.readline()
+        if not line:
+            break
+        line = line.strip()
+        if not line:
+            continue
+        if line == "QUIT":
+            break
+
+        parts = line.split(None, 1)
+        command = parts[0].upper()
+        payload = parts[1] if len(parts) > 1 else ""
+
