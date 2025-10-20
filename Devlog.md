@@ -10,3 +10,11 @@ I now understand that the Logger program’s only job is to read input lines fro
 
 
 Handle command-line argument parsing with `sys.argv` and also Open the log file in append mode and test writing a static line.
+
+# Oct 19th 7:45 pm
+ 
+The logger file opens and writes correctly. No runtime errors so far.  
+
+
+Next I am thinking to make the program read from stdin line by line instead of writing a static string and then also exit when the line "QUIT" is inputted.
+
