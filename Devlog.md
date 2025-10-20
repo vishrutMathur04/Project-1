@@ -99,5 +99,13 @@ Added blocks for encrypt and decrypt commands
 Now next I am thinking to add final else clause for unknown commands.
 Ensure every output is flushed immediately.
 
+# Oct 19 9:48 pm
+Encryptor module works as expected with all commands tested manually.
+No syntax errors or hangs — ready to integrate with Driver
+
+Now for the next session I will just finalize file by adding the main method/ main() block.
+
+And then prepare for testing with subprocess in Driver next.
+
 
 
