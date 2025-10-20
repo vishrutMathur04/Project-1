@@ -152,5 +152,14 @@ Now I’ll handle encryption and decryption commands, and make sure all results 
 Will Add handlers for encrypt and decrypt.
 Append results to history and log all actions except passwords.
 
+# Oct 19 11:05 pm
+The encrypt/decrypt logic works well. 
+
+Now I’ll add commands to show the stored history and handle the quit case cleanly.
+
+For that I will add a history display section.
+Send QUIT to both child processes when exiting.
+Ensure all processes terminate safely.
+
 
 

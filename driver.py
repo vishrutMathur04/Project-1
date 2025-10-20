@@ -84,5 +84,35 @@ try:
             else:
                 print(resp)
                 write_log("ERROR", resp)
+        elif command == "history":
+            if not history:
+                print("No history recorded yet.")
+            else:
+                for i, item in enumerate(history, start=1):
+                    print(f"{i}) [{item[0]}] INPUT: {item[1]} → OUTPUT: {item[2]}")
+
+        elif command == "quit":
+            if encrypt_proc.stdin:
+                encrypt_proc.stdin.write("QUIT\n")
+                encrypt_proc.stdin.flush()
+            write_log("QUIT", "Controller shutting down")
+            if logger_proc.stdin:
+                logger_proc.stdin.write("QUIT\n")
+                logger_proc.stdin.flush()
+            break
+
+        else:
+            print("Unknown command. Try again.")
+
+finally:
+    try:
+        encrypt_proc.stdin.close()
+        logger_proc.stdin.close()
+    except Exception:
+        pass
+    encrypt_proc.wait()
+    logger_proc.wait()
+    print("Exited cleanly.")
+
 
 
