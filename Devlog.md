@@ -52,3 +52,10 @@ Start `encrypt.py` following the same development pattern.
 I did some more testing with logger file and now have created the encrypt.py file for the encryption program
 
 Start working on 'encrypt.py`. This program will manage encryption/decryption using a Vigenère-style cipher and communicate via stdin/stdout.
+
+# Oct 19 8:56 pm
+I am thinking to find a way to validate input so only alphabetic text is processed.
+Non-letter characters should be rejected early to avoid errors.
+
+Write a helper function for only the letters
+It should return True if text has only letters.
