@@ -40,3 +40,30 @@ def send_encrypt_command(cmd):
         response = encrypt_proc.stdout.readline()
         return response.strip()
     return None
+
+history = []
+write_log("START", "Controller initialized")
+
+menu = """\nCommands:
+  password - set encryption key
+  encrypt  - encrypt a string
+  decrypt  - decrypt a string
+  history  - show previous actions
+  quit     - exit program
+"""
+
+try:
+    while True:
+        print(menu)
+        command = input("Enter command: ").strip().lower()
+
+        if command == "password":
+            key = input("Enter password (letters only): ").strip()
+            resp = send_encrypt_command(f"PASS {key.upper()}")
+            if resp.startswith("RESULT"):
+                print("Password set successfully.")
+                write_log("PASSWORD", "Key set")
+            else:
+                print(resp)
+                write_log("ERROR", resp)
+

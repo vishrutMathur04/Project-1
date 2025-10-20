@@ -134,4 +134,14 @@ So now next I will Add a write_log() function to send entries to the logger.
 
 and then also add send_encrypt_command() to send instructions to encrypt file and read its responses.
 
+# Oct 19 10:40 pm
+With communication established, I need to build the main user interface.
+Driver should let the user set passwords, encrypt/decrypt strings, and view history.
+
+Now I will create interactive loop with menu.
+
+Add options for password setup, encryption, and decryption.
+
+Maintain a history list.
+
 
