@@ -173,6 +173,26 @@ Took a break
 I tested log files mylog1.txt
 as I set the password and then tried to encrypt hello and was able to encrypt and then tried to decrypt it as well and its working.
 
+# Oct 19 11:52 pm
+I tested another log file mylog2.txt and I was successfully able to encrypt hello and flower words and then was able to decrypt as well.
+Tested the history command as well.
+Quit command is working as well.
+
+Ultimately really cool project as I am able to set a password and then also able to encrypt decrypt words plus see the history.
+
+It shows how an Operating System or DevOps agent might monitor and control components
+The Driver (controller) acts like a system manager or daemon controller
+
+The Logger like a syslog service (records activity, errors, timestamps)
+
+The Encryptor like a security module that processes sensitive data (encrypt/decrypt)
+
+This project could be used in 
+Process supervision systems eg like systemd, Docker daemon
+
+Cloud resource monitors such as AWS CloudWatch agents
+
+and last but not the least local OS security modules or background utilities
 
 
 
