@@ -126,4 +126,12 @@ Use subprocess.Popen to start both programs.
 
 Configure encoding and pipes.
 
+# Oct 19 10:26 pm
+Both child processes launch fine. I now need helper functions to make the communication cleaner.
+Driver should log actions and interact with encryptor easily.
+
+So now next I will Add a write_log() function to send entries to the logger.
+
+and then also add send_encrypt_command() to send instructions to encrypt file and read its responses.
+
 
