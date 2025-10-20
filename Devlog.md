@@ -107,5 +107,13 @@ Now for the next session I will just finalize file by adding the main method/ ma
 
 And then prepare for testing with subprocess in Driver next.
 
+# Oct 19 9:55 pm
+
+So now both the logger and encryptor are functional individually.
+Now I need a central script that coordinates them, manages I/O, and provides an interface for the user.
+
+Create a new file driver.py
+
+Import required modules (sys, subprocess).
 
 
