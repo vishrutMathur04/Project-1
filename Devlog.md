@@ -107,7 +107,7 @@ Now for the next session I will just finalize file by adding the main method/ ma
 
 And then prepare for testing with subprocess in Driver next.
 
-# Oct 19 9:55 pm
+# Oct 19 9:56 pm
 
 So now both the logger and encryptor are functional individually.
 Now I need a central script that coordinates them, manages I/O, and provides an interface for the user.
@@ -115,5 +115,15 @@ Now I need a central script that coordinates them, manages I/O, and provides an 
 Create a new file driver.py
 
 Import required modules (sys, subprocess).
+
+# Oct 19 10:05 pm
+
+Now that argument parsing works, I can spawn both the logger and encryptor as subprocesses.
+They’ll be connected via stdin and stdout pipes.
+
+
+Use subprocess.Popen to start both programs.
+
+Configure encoding and pipes.
 
 
