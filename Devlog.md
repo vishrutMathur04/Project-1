@@ -4,3 +4,4 @@ I need to write 3 programs in Python named as Logger, Encryptor and Driver. The 
 No thoughts as such from the last text
 
 I am going to create a logger.py file to start working on my first function.
+
