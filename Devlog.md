@@ -30,4 +30,11 @@ So I was able to add time stamp that formats entries in this format `YYYY-MM-DD 
 
 Now next I will use first token as tag (action), rest as message and also try to integrate timestamp function.
 
+# Oct 19 8:14 pm  
+So I was able to split each line into an ACTION and MESSAGE.  
+also was able to skip blank lines.  
+and then flush output after every write.
+
+Next I would need to Wrap logic in a main() for clarity, validate argument count, test edge cases.
+
 
