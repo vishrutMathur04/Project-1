@@ -18,3 +18,11 @@ The logger file opens and writes correctly. No runtime errors so far.
 
 Next I am thinking to make the program read from stdin line by line instead of writing a static string and then also exit when the line "QUIT" is inputted.
 
+# Oct 19 7:55 pm
+
+Reading input works, but I need timestamps to identify when each action happened.
+
+ 
+- Add stamp_line(action, message) that formats entries as `YYYY-MM-DD HH:MM [ACTION] message` and then test the function separately before integrating.
+
+
