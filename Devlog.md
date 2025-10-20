@@ -45,5 +45,10 @@ I was able to implement all the requirements in Logger and a main method and now
  Flushes after each entry.  
  Handles argument errors cleanly.  
 
-**Plan for next session:**  
+
 Start `encrypt.py` following the same development pattern.
+
+# Oct 19 8:45 pm
+I did some more testing with logger file and now have created the encrypt.py file for the encryption program
+
+Start working on 'encrypt.py`. This program will manage encryption/decryption using a Vigenère-style cipher and communicate via stdin/stdout.
