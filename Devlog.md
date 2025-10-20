@@ -25,4 +25,9 @@ Reading input works, but I need timestamps to identify when each action happened
  
 - Add stamp_line(action, message) that formats entries as `YYYY-MM-DD HH:MM [ACTION] message` and then test the function separately before integrating.
 
+# Oct 19 8:00 pm  
+So I was able to add time stamp that formats entries in this format `YYYY-MM-DD HH:MM
+
+Now next I will use first token as tag (action), rest as message and also try to integrate timestamp function.
+
 
