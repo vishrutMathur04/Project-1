@@ -4,4 +4,9 @@ I need to write 3 programs in Python named as Logger, Encryptor and Driver. The 
 No thoughts as such from the last text
 
 I am going to create a logger.py file to start working on my first function.
+# Oct 19th 7:30 pm
 
+I now understand that the Logger program’s only job is to read input lines from stdin, timestamp them, and write them to a log file whose name is provided as a command-line argument.
+
+
+Handle command-line argument parsing with `sys.argv` and also Open the log file in append mode and test writing a static line.
